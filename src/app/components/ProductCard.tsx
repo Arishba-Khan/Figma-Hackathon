@@ -9,6 +9,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
+    
     <div
       key={product.id}
       className="flex flex-col text-sm sm:text-base leading-relaxed max-w-[150px] sm:max-w-[250px] lg:max-w-[300px]"
@@ -30,5 +31,6 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
       </div>
     </div>
+  
   );
 }

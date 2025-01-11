@@ -146,7 +146,7 @@ const Order = () => {
 
         {/* Right Section */}
         <div className="w-full lg:w-[310px] flex-shrink-0">
-          <div className="p-4 rounded-lg">
+          <div className="p-4 rounded-lg ">
             <h1 className="text-lg font-medium mb-5">Order Summary</h1>
             <div className="border-b pb-4 mb-4">
               <div className="flex justify-between mb-4">

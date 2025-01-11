@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { IoIosArrowForward } from 'react-icons/io';
-import { products } from './data/detail2'; // Assuming this is where `detail2` is located
-import { ProductDetail } from './data/detail2';
+import { products } from '../../app/components/data/detail2';
+import { ProductDetail } from '../../app/components/data/detail2';
+import Link from 'next/link';
 
 // ProductCard Component
 interface ProductCardProps {
@@ -12,6 +12,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
     return (
+      <Link href={"/detail"}>
       <div
         key={product.id}
         className="flex flex-col text-sm sm:text-base leading-relaxed max-w-[150px] sm:max-w-[250px] lg:max-w-[300px]"
@@ -33,6 +34,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
         </div>
       </div>
+      </Link>
     );
 
 }

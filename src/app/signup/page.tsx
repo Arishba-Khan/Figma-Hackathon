@@ -103,7 +103,7 @@ export default function SignUpForm() {
         </form>
         <p className="text-center text-sm">
           <span className="text-slate-500">Already a Member? </span>
-          <Link href="#" className="text-black underline hover:no-underline">
+          <Link href="/join" className="text-black underline hover:no-underline">
             Sign In
           </Link>
         </p>

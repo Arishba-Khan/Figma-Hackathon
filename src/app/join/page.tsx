@@ -67,7 +67,7 @@ export default function LoginForm() {
         </form>
         <p className="text-center text-sm">
           <span className="text-slate-500">Not a Member? </span>
-          <Link href="#" className="text-black underline hover:no-underline">
+          <Link href="/signup" className="text-black underline hover:no-underline">
             Join Us
           </Link>
         </p>

@@ -43,7 +43,6 @@ export const products: ProductDetail[] = [
     category: "men",
   },
 
-  // Remaining Products
   {
     id: 4,
     name: "Nike Dri-FIT ADV TechKnit Ultra",

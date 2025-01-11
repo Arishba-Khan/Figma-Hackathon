@@ -1,4 +1,3 @@
-import { Button } from "./ui/button";
 export default function flight() {
   return (
     <main className="m-4">
