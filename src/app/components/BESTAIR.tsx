@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { products, ProductDetail } from "@/components/data/detail"; // Import the product data
+import Link from "next/link";
 
 export default function BEST() {
   // Filter the best products (best1, best2, best3)
@@ -12,7 +13,8 @@ export default function BEST() {
       </div>
       <div className="flex flex-wrap justify-evenly items-center gap-4 sm:gap-5">
         {bestProducts.map((product: ProductDetail) => (
-          <div
+         <Link href={"/detail"}>
+         <div
             key={product.id}
             className="flex flex-col text-sm sm:text-base leading-relaxed max-w-[150px] sm:max-w-[250px] lg:max-w-[300px]"
           >
@@ -35,6 +37,7 @@ export default function BEST() {
               </div>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </section>

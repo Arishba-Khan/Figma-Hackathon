@@ -31,13 +31,13 @@ import p29 from "../../../../public/product/p (29).jpg";
 import p30 from "../../../../public/product/p (30).jpg";
 
 export interface ProductDetail {
-  id: string; // Alphanumeric ID
+  id: string; 
   name: string;
   description: string;
-  price: string | number; // Flexible price type
-  imageUrl: string | StaticImageData; // Supports both static and dynamic images
-  category?: "men" | "women"; // Optional category for categorization
-  deal: string; // Deal information (color orange can be handled in UI)
+  price: string | number; 
+  imageUrl: string | StaticImageData; 
+  category?: "men" | "women"; 
+  deal: string;
 }
 
 export const products: ProductDetail[] = [

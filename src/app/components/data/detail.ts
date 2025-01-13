@@ -8,16 +8,16 @@ import G3 from "../../../../public/assests/G3.png";
 import G4 from "../../../../public/assests/G4.png";
 
 export interface ProductDetail {
-  id: string | number; // Flexible ID type
+  id: string | number;
   name: string;
   description: string;
-  price: string | number; // Flexible price type
-  imageUrl: string | StaticImageData; // Supports both static and dynamic images
-  category?: "men" | "women"; // Optional category for categorization
+  price: string | number; 
+  imageUrl: string | StaticImageData; 
+  category?: "men" | "women"; 
 }
 
 export const products: ProductDetail[] = [
-  // Reordered Products with Best Images
+  
   {
     id: 1,
     name: "Nike Air Max Pulse",

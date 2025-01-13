@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { ProductDetail } from './data/detail';
+import Link from 'next/link';
 
 interface ProductCardProps {
   product: ProductDetail;
@@ -9,7 +10,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
-    
+    <Link href={"/detail"}>
     <div
       key={product.id}
       className="flex flex-col text-sm sm:text-base leading-relaxed max-w-[150px] sm:max-w-[250px] lg:max-w-[300px]"
@@ -31,6 +32,6 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
       </div>
     </div>
-  
+    </Link>
   );
 }
