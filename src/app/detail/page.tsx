@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { FaCartPlus } from "react-icons/fa";
 import { Button } from "../components/ui/button"; // Assuming you have a Button component
 import Image from "next/image";
